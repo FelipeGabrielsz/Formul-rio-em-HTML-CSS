@@ -1,0 +1,62 @@
+#bloco1 {
+    text-align: center;
+}
+
+.grupo {
+    border: 0px;
+   
+    margin-left: 500px;
+    
+}
+
+.campo {
+    font-size: 18px ;
+    padding: 0.6em;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #F0F8FF;
+    color: #59429d;
+    margin-top: 2%;
+}
+
+#descricao {
+    font-size: 30px;
+}
+
+#exp {
+    
+}
+
+.campo label {
+    margin-bottom:0.5em ; /*Está distanciado os input do label*/
+    color:  #59429d;
+    display: block ; /*deixa os label em bloco, ou seja, em cima dos input*/
+}
+
+input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #59429d; /*Cor para as letras do input*/
+    border-radius: 10px;
+}
+
+#botao {
+   cursor: pointer;
+   margin-left: 650px;
+}
+
+#botao:hover {
+    box-shadow: inset 1px 1px 1px black;
+    text-shadow: none;
+    background: #CCBBFF;
+}
+
+.campo textarea {
+    position: relative;
+    left: -50px;
+}
+input{
+    cursor: pointer;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Formulario de Cadastro</title>
+ 
+</head>
+<body>
+    <div id="bloco1">
+        <h1>Cadastro</h1>
+        <p id="descricao">Preencha os campos para obter seu Cadastro</p>    
+    </div>
+
+    <form action="enviar.JS" name="form" target="_blank" id="">
+            <fieldset class="grupo"> <!--INFORMACOES PESSOAIS-->
+
+                <div class="campo">
+                    <label for="nome"><strong>Nome Completo</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="cpf"><strong>CPF/CNPJ</strong></label>
+                    <input type="number" name="cpf" id="cpf" required>
+                    <select name="cpf-cnpj" id="cpf-cnpj">
+                        <option value="cpf">CPF</option>
+                        <option value="CNPJ">CNPJ</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="rg"><strong>RG</strong></label>
+                    <input type="number" name="rg" id="rg" required>
+                </div>
+
+                <div class="campo">
+                    <label for="sexo"><strong> Sexo: </strong> </label>
+                    <input type="radio" name="sexo" value="mas">Masculino
+                    <input type="radio" name="sexo" value="fem">Feminino
+
+                </div>
+
+                <div class="campo">
+                    <label for="end"><strong>Endereço</strong></label>
+                    <input type="text" name="end" id="end" required>
+
+                    <label for="comple"><strong>Complemento</strong></label>
+                    <input type="text" name="comple" id="comple">
+                </div>
+
+                <div class="campo">
+                    <label for="nasc"><strong>Data de Nascimento</strong></label>
+                    <input type="date" name="nasc" id="nasc">
+                </div>
+
+                <div class="campo">
+                    <label for="estado"><strong>Estado</strong></label>
+                    <select name="cpf-cnpj" id="cpf-cnpj">
+                        <option value="estado">Selecione</option>
+                        <option value="RS">RS</option>
+                        <option value="SC">SC</option>
+                        <option value="PR">PR</option>
+                    </select>
+                </div >
+                    
+                <div class="campo">
+                    <label for="cep"><strong>CEP</strong></label>
+                    <input type="number" name="cep" id="cep" required>
+                </div>
+
+            </fieldset>
+
+            <fieldset class="grupo">
+                
+                <div class="campo">
+                    <label for="phone"><strong>Telefone/Celular</strong></label>
+                    <input type="number" name="phone" id="phone" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email"><strong>Email</strong></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo">
+
+                <div class="campo">
+                    <label for="usu"><strong>Usuário</strong></label>
+                    <input type="text" name="usu" id="usu" required>
+                </div>
+
+                <div class="campo">
+                    <label for="senha"><strong>Senha</strong></label>
+                    <input type="password" name="senha" id="senha" required>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="ativi"><strong>Atividades a serem exercidas</strong></label>
+                    <select name="ativi" id="ativi" required>
+                        <option value="Selecione">Selecione</option>
+                        <option value="Programador">Programador</option>
+                        <option value="Suporte">Suporte</option>
+                        <option value="Analista">Analista</option>
+                        <option value="Infraestrutura">Infraestrutura</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="nivel"><strong>Nivel de Experiência</strong></label>
+                    <input type="radio" name="nivel" value="Estágio">Estágio
+                    <input type="radio" name="nivel" value="Júnior">Júnior
+                    <input type="radio" name="nivel" value="Pleno">Pleno
+                    <input type="radio" name="nivel" value="Senior"> Senior
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="exp" id="exp"><strong>Conte um pouco mais da sua Experiência:</strong> </label>
+                    <textarea name="experinecia" id="exp" style="width: 26em;" rows="6"></textarea>
+                </div>
+            </fieldset>
+
+            <button id="botao" type="submit"  onsubmit="">Concluído</button>
+    </form>
+    
+</body>
+</html>
